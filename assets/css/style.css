@@ -13,6 +13,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -42,7 +43,10 @@ h1 {
 }
 
 h2 {
-    font-size: 5.5rem;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -61,6 +65,10 @@ h6 {
     font-size: 3.5rem;
 }
 
+p {
+    margin-bottom: 3rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -74,6 +82,7 @@ a {
 
 .white-bg {
     background: var(--white-color);
+    color: var(--primary-color);
 }
 
 .main-content {
@@ -105,13 +114,16 @@ a {
     justify-content: center;
 }
 
-.intro-left h2 {
-    font-size: 6rem;
-    margin-bottom: 3rem;
-    line-height: 1.2;
-}
-
 .intro-right img{
     max-width: 100%;
     height: auto;
+}
+
+.top3-content {
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
 }
