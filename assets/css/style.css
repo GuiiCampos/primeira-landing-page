@@ -142,3 +142,31 @@ a {
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
+
+table {
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 0.5rem;
+    border: 0.1rem solid var(--white-color);
+    text-align: left;
+}
+
+tfoot td, table th {
+    background: #271f44;
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
