@@ -101,7 +101,7 @@ a {
 
 .intro-content {
     position: relative;
-    top: -8rem;
+    /*top: -8rem;*/
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -169,4 +169,8 @@ tfoot td, table th {
 .responsive-table {
     overflow: hidden;
     overflow-x: auto;
+}
+
+.contact-form {
+    grid-column: span 2;
 }
