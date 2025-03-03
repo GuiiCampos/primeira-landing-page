@@ -2,6 +2,7 @@
     --primary-color: #0A1128;
     --white-color: #FFFFFF;
     --light-gray-color: #EEEEEE;
+    --gray-color: #9e9e9e;
     --secondary-color: crimson;
     --gap: 3rem;
 }
@@ -9,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -173,4 +175,39 @@ tfoot td, table th {
 
 .contact-form {
     grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+.form-group label {
+    display: block;
+}
+.form-group input, textarea{
+    border: none;
+    background-color: var(--light-gray-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+
+body .full-wid {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--gray-color);
+    background: none;
+    color: var(--gray-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
 }
